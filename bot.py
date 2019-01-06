@@ -3,6 +3,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 from asyncio import sleep
+import sys
 import random
 
 f = open('token.txt', 'r')
@@ -126,5 +127,13 @@ async def guess(ctx):
 async def joined(member : discord.Member):
     """says when someone joined"""
     await client.say('{0.name} joined this server on {0.joined_at}'.format(member))
+
+@client.command(pass_context=True, brief='check your rank', description='checks your server clout')
+async def rank(ctx):
+    await client.say('hell if i know ask mr owl or some shit idk')
+
+@client.command(pass_context=True, brief='yeet', description='yeet')
+async def yeet(ctx):
+    await client.say('**y e e t**')
 
 client.run(token)
