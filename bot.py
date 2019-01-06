@@ -136,4 +136,8 @@ async def rank(ctx):
 async def yeet(ctx):
     await client.say('**y e e t**')
 
+@client.command(pass_context=True, brief='rei is going to see the room at a theater', description='yes that was not a lie')
+async def theroom(ctx):
+    await client.say('oh hai mahk u very funny guy ahahahahaha')
+
 client.run(token)
