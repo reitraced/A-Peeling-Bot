@@ -3,7 +3,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 from asyncio import sleep
-import sys
+import random
 
 f = open('token.txt', 'r')
 token = f.read()
