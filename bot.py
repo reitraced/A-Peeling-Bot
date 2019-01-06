@@ -139,13 +139,13 @@ async def yeet(ctx):
 @client.command(pass_context=True, brief='rei is going to see the room at a theater', description='yes that was not a lie')
 async def theroom(ctx):
     await client.say('oh hai mahk u very funny guy ahahahahaha')
-    
+
 @client.command(pass_context=True, brief='It\'s just a 8ball.')
 async def magicball(ctx, *arg):
     if not arg:
         await client.say('lol u did not ask a question :rage:')
     else:
-     ball8 = random.choice(['It is certain','As i see it, yes', 'Dont count on it', 'Without a doubt', 'Definitely', 'Very doubtful', 'Outlook not so good', 'My gamer sources say no', 'lol no', 'Most likely', 'You may rely on it', 'i\'m too lazy to awnswer this right now'])
+     ball8 = random.choice(['yea def gon happen','hell yea fam', 'oof not gonna happen', 'yea sure', 'def gonna happen i can see it im under your bed', 'never gonna happen', 'dont see it happening', 'my gamer sources say no', 'lol no', 'most likely gonna happen', 'you can rely on it', 'im too lazy to awnswer this right now'])
      await client.say(ball8)
 
 client.run(token)
