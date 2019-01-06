@@ -140,8 +140,8 @@ async def yeet(ctx):
 async def theroom(ctx):
     await client.say('oh hai mahk u very funny guy ahahahahaha')
 
-@client.command(pass_context=True, brief='It\'s just a 8ball.')
-async def magicball(ctx, *arg):
+@client.command(pass_context=True, brief='it is always right')
+async def magicconch(ctx, *arg):
     if not arg:
         await client.say('lol u did not ask a question :rage:')
     else:
