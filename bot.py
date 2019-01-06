@@ -168,7 +168,7 @@ async def pp(ctx):
     await client.say('REIBOT9000 PP MEASUREMENT TOOL ACTIVATED')
     await client.say('MEASURING.....')
     await sleep(2)
-    await client.say("RESULTS" + pp)
+    await client.say("RESULTS " + pp)
 
 @client.command(pass_context=True, brief='tells reibot that its gay')
 async def gay(ctx):
