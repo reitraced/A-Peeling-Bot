@@ -4,5 +4,5 @@ currently very early in development with very few useful commands
 will likely be used on any of my discord servers
 
 # Requriments
-Python 3.3+\
+Python 3.5+\
 Discord.py
