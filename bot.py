@@ -5,7 +5,16 @@ import asyncio
 from asyncio import sleep
 import sys
 
-ownerid = "OWNER_ID_HERE"
+f = open('token.txt', 'r')
+token = f.read()
+f.seek(0)
+f.close()
+
+f = open('owner.txt', 'r')
+ownerid = f.read()
+f.seek(0)
+f.close()
+
 p = "r!"
 client = commands.Bot(command_prefix=p)
 
@@ -71,4 +80,4 @@ async def gaydetector(ctx):
     await sleep(5)
     await client.say('RESULTS: yall nibbas gay :joy:')
 
-client.run('BOT_TOKEN_HERE')
+client.run(token)
