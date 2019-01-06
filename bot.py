@@ -174,4 +174,8 @@ async def pp(ctx):
 async def gay(ctx):
     await client.say('yeah you too')
 
+@client.command(pass_context=True, brief='oof')
+async def oof(ctx):
+    await client.say('oof')
+
 client.run(token)
