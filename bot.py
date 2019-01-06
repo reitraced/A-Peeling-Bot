@@ -29,7 +29,7 @@ async def on_ready():
     print('We have logged in as {0.user}'.format(client))
     await client.change_presence(game=discord.Game(name=argtxt))
 
-@client.command(pass_context=True, brief='Responds \'Poing!\'.', description='Responds \'Poing!\', This command is used for testing the bot.')
+@client.command(pass_context=True, brief='Responds \'Pong!\'.', description='Responds \'Pong!\', This command is used for testing the bot.')
 async def ping(ctx):
         await client.say("i refuse to respond pong this is 2019 check your privilage")
 
@@ -63,6 +63,14 @@ async def steam(ctx):
 @client.command(pass_context=True, brief='posts reis deviantart link', description='posts reis deviantart link')
 async def deviantart(ctx):
     await client.say('heres a trash deviantart account: https://www.deviantart.com/reitrace')
+
+@client.command(pass_context=True, brief='posts reis instagram link', description='posts reis instagram link')
+async def instagram(ctx):
+    await client.say('lol follow my insta: https://www.instagram.com/reitrace')
+
+@client.command(pass_context=True, brief='posts a link to the source code', description='posts a link to the source code')
+async def source(ctx):
+    await client.say('https://github.com/reitraced/reibot9000')
 
 @client.command(pass_context=True, brief='nanners', description='nanners')
 async def banana(ctx):
