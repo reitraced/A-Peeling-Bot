@@ -24,7 +24,7 @@ async def on_ready():
 
 @client.command(pass_context=True, brief='Responds \'Poing!\'.', description='Responds \'Poing!\', This command is used for testing the bot.')
 async def ping(ctx):
-        await client.say("Pong!")
+        await client.say("i refuse to respond pong this is 2019 check your privilage")
 
 @client.command(pass_context=True, brief='[Owner Only] Changes the current game.', description='[Owner Only] Changes the current game.')
 async def game(ctx, arg):
