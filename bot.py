@@ -178,4 +178,8 @@ async def gay(ctx):
 async def oof(ctx):
     await client.say('oof')
 
+@client.command(pass_context=True, brief='rage command')
+async def rage(ctx):
+    await client.say('lol stop raging and get over it *dabs*')
+
 client.run(token)
