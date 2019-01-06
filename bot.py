@@ -164,7 +164,7 @@ async def magicconch(ctx, *arg):
 
 @client.command(pass_context=True, brief='dick measurer')
 async def pp(ctx):
-    pp = random.choice(['long schlong', 'thicc dicc', 'teenie weenie', 'lol ur dick smol :joy:'])
+    pp = random.choice(['long schlong :straight_ruler:', 'thicc dicc :eggplant:', 'teenie weenie :hotdog:', 'lol ur dick smol :joy:'])
     await client.say('REIBOT9000 PP MEASUREMENT TOOL ACTIVATED')
     await client.say('MEASURING.....')
     await sleep(2)
