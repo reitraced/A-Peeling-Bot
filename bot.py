@@ -28,7 +28,7 @@ client = commands.Bot(command_prefix=p)
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
     await client.change_presence(game=discord.Game(name=argtxt))
-    
+
 @client.command(pass_context=True, brief='Responds \'Poing!\'.', description='Responds \'Poing!\', This command is used for testing the bot.')
 async def ping(ctx):
         await client.say("i refuse to respond pong this is 2019 check your privilage")
@@ -59,6 +59,10 @@ async def twitch(ctx):
 @client.command(pass_context=True, brief='posts reis steam link', description='posts reis steam link')
 async def steam(ctx):
     await client.say('heres a gay steam account i found: https://www.steamcommunity.com/id/last2live')
+
+@client.command(pass_context=True, brief='posts reis deviantart link', description='posts reis deviantart link')
+async def deviantart(ctx):
+    await client.say('heres a trash deviantart account: https://www.deviantart.com/reitrace')
 
 @client.command(pass_context=True, brief='nanners', description='nanners')
 async def banana(ctx):
