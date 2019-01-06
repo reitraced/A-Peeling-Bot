@@ -102,5 +102,29 @@ async def gaydetector(ctx):
     await client.say('SCANNING')
     await sleep(5)
     await client.say('RESULTS: yall nibbas gay :joy:')
+    
+@client.command(pass_context=True, brief='Guessing Game', description='Guess the Correct Number to win.')
+async def guess(ctx):
+    
+        await client.say('Guess a number between 1 to 10')
+
+        def guess_check(m):
+            return m.content.isdigit()
+
+        guess = await client.wait_for_message(timeout=5.0, author=ctx.message.author, check=guess_check)
+        answer = random.randint(1, 10)
+        if guess is None:
+            fmt = 'Sorry, you took too long. It was {}.'
+            await client.say(fmt.format(answer))
+            return
+        if int(guess.content) == answer:
+            await client.say('You are right!')
+        else:
+            await client.say('Sorry. It is actually {}.'.format(answer))
+
+@client.command()
+async def joined(member : discord.Member):
+    """Says when a member joined."""
+    await client.say('{0.name} joined this server on {0.joined_at}'.format(member))
 
 client.run(token)
