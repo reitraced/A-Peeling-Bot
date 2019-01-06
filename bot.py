@@ -34,11 +34,11 @@ async def on_ready():
     print('We have logged in as {0.user}'.format(client))
     await client.change_presence(game=discord.Game(name=argtxt))
 
-@client.command(pass_context=True, brief='Responds \'Pong!\'.', description='Responds \'Pong!\', This command is used for testing the bot.')
+@client.command(pass_context=True, brief='forces reibot to respond pong.', description='forces reibot to respond pong. used for testing the bot')
 async def ping(ctx):
         await client.say("i refuse to respond pong this is 2019 check your privilage")
 
-@client.command(pass_context=True, brief='[Owner Only] Changes the current game.', description='[Owner Only] Changes the current game.')
+@client.command(pass_context=True, brief='allows owner to change the playing status', description='allows owner to change the playing status')
 async def game(ctx, arg):
         if ctx.message.author.id == ownerid:
          await client.say("Setting game to " + arg)
