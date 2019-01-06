@@ -5,6 +5,7 @@ import asyncio
 from asyncio import sleep
 import sys
 import random
+import os
 
 f = open('token.txt', 'r')
 token = f.read()
@@ -21,8 +22,11 @@ argtxt = f.read()
 f.seek(0)
 f.close()
 
+f = open('prefix.txt', 'r')
+p = f.read()
+f.seek(0)
+f.close()
 
-p = "r!"
 client = commands.Bot(command_prefix=p)
 
 @client.event
@@ -43,6 +47,16 @@ async def game(ctx, arg):
           file.write(arg)
          file.close()
          await client.change_presence(game=discord.Game(name=arg))
+
+#@client.command(pass_context=True, brief='[Owner Only] Changes the current prefix.', description='[Owner Only] Changes the current prefix.')
+#async def prefix(ctx, arg):
+#        if ctx.message.author.id == ownerid:
+#         await client.say("Setting prefix to " + arg)
+#         print('Prefix set to '+ arg)
+#         with open('prefix.txt', 'w') as file:
+#          file.write(arg)
+#         file.close()
+#         os.execv('bot.py', sys.argv)
 
 @client.command(pass_context=True, brief='posts the dominos miku ad', description='posts the dominos miku ad')
 async def dominos(ctx):
@@ -154,6 +168,6 @@ async def pp(ctx):
     await client.say('REIBOT9000 PP MEASUREMENT TOOL ACTIVATED')
     await client.say('MEASURING.....')
     await sleep(2)
-    await client.say(pp)
+    await client.say("RESULTS" + pp)
 
 client.run(token)
