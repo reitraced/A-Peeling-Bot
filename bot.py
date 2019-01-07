@@ -64,7 +64,7 @@ async def dominos(ctx):
 
 @client.command(pass_context=True, brief='forces stoph and rei to work on the bot', description='forces stoph and rei to work on the bot')
 async def work(ctx):
-    await client.say("here you can work on the bot too https://github.com/reitraced/reibot9000")
+    await client.say("oof this command isnt implemented yet, you can make it tho if u want: https://github.com/reitraced/reibot9000")
 
 @client.command(pass_context=True, brief='posts reis twitch link', description='posts reis twitch link')
 async def twitch(ctx):
