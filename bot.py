@@ -111,6 +111,10 @@ async def job(ctx):
 async def crime(ctx):
     await client.say('in your attempt to rob the richest man in the galaxy, ignacious clerance weiner, you were caught and sentenced to 20 years of prison. look on the bright side, at least you have food now!')
 
+@client.command(pass_context=True, brief='breaks out of jail')
+async def jailbreak(ctx):
+    await client.say('you attempt to organize a jailbreak with your cellmates, they are all for the idea. what they did not know was that the guards already knew and were waiting for the break. you are caught and ratted out as the organizer. you are sentenced to death. game over')
+
 @client.command(pass_context=True, brief='finds all gay people on the server', description='finds all gay people on the server')
 async def gaydetector(ctx):
     await client.say('REIBOT GAY DETECTOR ACTIVATED')
@@ -181,5 +185,9 @@ async def oof(ctx):
 @client.command(pass_context=True, brief='rage command')
 async def rage(ctx):
     await client.say('lol stop raging and get over it *dabs*')
+
+@client.command(pass_context=True, brief='tells reibot to kill someone')
+async def kill(ctx):
+    await client.say('lol im not a hitman go get a gun and kill them yourself lazy bones')
 
 client.run(token)
