@@ -187,7 +187,13 @@ async def rage(ctx):
     await client.say('lol stop raging and get over it *dabs*')
 
 @client.command(pass_context=True, brief='tells reibot to kill someone')
-async def kill(ctx):
+async def kill(ctx, *arg):
     await client.say('lol im not a hitman go get a gun and kill them yourself lazy bones')
+
+@client.command(pass_context=True, brief='displays credits')
+async def credits(ctx):
+    await client.say('**REIBOT9000 CREDITS**')
+    await client.say('ALL THE USEFUL SHIT: stophman1')
+    await client.say('ALL THE USELESS SHIT: reitraced')
 
 client.run(token)
