@@ -14,7 +14,7 @@ class social():
 
     @commands.command(pass_context=True, brief='posts reis twitch link', description='posts reis twitch link')
     async def twitch(self, ctx):
-        await self.bot.say("lol my gay owners twitch is https://www.twitch.tv/last2livestream")
+        await self.bot.say("lol my gay owners twitch is https://www.twitch.tv/reitrace")
 
     @commands.command(pass_context=True, brief='posts reis steam link', description='posts reis steam link')
     async def steam(self, ctx):
