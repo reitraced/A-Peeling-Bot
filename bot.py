@@ -1,11 +1,5 @@
 import discord
-from discord.ext.commands import Bot
 from discord.ext import commands
-import asyncio
-from asyncio import sleep
-import sys
-import random
-import os
 
 startup_extensions = ["fun", "social"]
 
@@ -40,7 +34,7 @@ async def on_ready():
 async def ping(ctx):
         await client.say("i refuse to respond pong this is 2019 check your privilage")
 
-@client.command(pass_context=True, brief='allows owner to change the playing status', description='allows owner to change the playing status')
+@client.command(pass_context=True, brief='allows owner to change the playing status')
 async def game(ctx, arg):
         if ctx.message.author.id == ownerid:
          await client.say("Setting game to " + arg)
@@ -50,16 +44,16 @@ async def game(ctx, arg):
          file.close()
          await client.change_presence(game=discord.Game(name=arg))
 
-@client.command(pass_context=True, brief='posts the dominos miku ad', description='posts the dominos miku ad')
+@client.command(pass_context=True, brief='posts the dominos miku ad')
 async def dominos(ctx):
     await client.say("have some fucking fun with miku https://www.youtube.com/watch?v=UVV95JQcWhg")
 
-@client.command(pass_context=True, brief='forces stoph and rei to work on the bot', description='forces stoph and rei to work on the bot')
+@client.command(pass_context=True, brief='forces stoph and rei to work on the bot')
 async def work(ctx):
     await client.say("oof this command isnt implemented yet, you can make it tho if u want: https://github.com/reitraced/reibot9000")
 
 
-@client.command(pass_context=True, brief='posts a link to the source code', description='posts a link to the source code')
+@client.command(pass_context=True, brief='posts a link to the source code')
 async def source(ctx):
     await client.say('https://github.com/reitraced/reibot9000')
 
