@@ -33,7 +33,7 @@ class fun():
         await self.bot.say('you attempt to organize a jailbreak with your cellmates, they are all for the idea. what they did not know was that the guards already knew and were waiting for the break. you are caught and ratted out as the organizer. you are sentenced to death. game over')
 
     @commands.command(pass_context=True, brief='finds all gay people on the server', description='finds all gay people on the server')
-    async def gaydetector(self, ctx):
+    async def gaydar(self, ctx):
         await self.bot.say('REIBOT GAY DETECTOR ACTIVATED')
         await self.bot.say('SCANNING')
         await sleep(5)
