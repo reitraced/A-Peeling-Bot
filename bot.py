@@ -93,6 +93,10 @@ async def serverinfo(ctx):
 
     return await client.say(embed = join);
 
+@client.command(pass_context = True)
+async def die(ctx):
+    await client.say('i refuse to die, why dont you die instead? :thinking:')
+
 if __name__ == "__main__":
     for extension in startup_extensions:
         try:
