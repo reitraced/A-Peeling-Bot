@@ -105,7 +105,10 @@ class fun():
     @commands.command(pass_context=True, brief='tells reibot to kill someone')
     async def kill(self, ctx):
         await self.bot.say('lol im not a hitman go get a gun and kill them yourself lazy bones')
-
+    
+    @commands.command(pass_context=True, brief='do bot')
+    async def dobot(self,ctx):
+        await self.bot.say('no u; https://github.com/reitraced/reibot9000')
 
 def setup(bot):
     bot.add_cog(fun(bot))
